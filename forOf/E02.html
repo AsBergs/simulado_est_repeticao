@@ -8,12 +8,16 @@
     */
 
     //ENTRADA
-
-
+    let nomePessoas = ["Eduardo da Silva", "Eduardo Montandon", "Lucas Eduardo", "José da Silva", "Rafael Gonçalves"];
+let familiaSilva = [];
     //PROCESSAMENTO
-
+for(nome of nomePessoas){
+if(nome.indexOf("Silva") >= 0){
+    familiaSilva.push(nome);
+}
+}
 
     //SAÍDA
-
+document.write(`Os descendentes da Família são ${familiaSilva.join(", ")} </br> A familia Silva possui: ${familiaSilva.length} descendentes`)
 
 </script>

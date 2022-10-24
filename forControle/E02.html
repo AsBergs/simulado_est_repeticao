@@ -12,12 +12,18 @@
     */
 
     //ENTRADA
-
-
+const abasteceu = Number(prompt("Quantas vezes abasteceu?: "))
+const distPer = parseInt(prompt("Qual a distância total percorrida (Em quilômetros)?: "))
+let soma = 0;
     //PROCESSAMENTO
+for(contador = 1; contador <= abasteceu; contador++){
+    const valosGas = parseInt(prompt("Qual o valor de cada abastecimento?: "));
+soma = soma + valosGas;
+}
 
-
-    //SAÍDA
-
+const custoQui = distPer / soma;
+    
+//SAÍDA
+document.write(`Cada quilômetro percorrido custou: ${custoQui.toFixed(2)}$ </br> O custo total dos abastecimentos: ${soma}$ </br> Quilometragem percorrida: ${distPer}`)
 
 </script>
