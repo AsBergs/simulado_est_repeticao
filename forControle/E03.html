@@ -12,15 +12,15 @@
     */
 
     //ENTRADA
-const valorInicial = parseInt(prompt("Qual o valor inicial invesido?: "))
-let meses = 0;
+   let valorInicial = Number(prompt("Qual o valor inicial invesido?: "))
+
 let valorFinal = valorInicial * 2;
+let meses = 0;
     //PROCESSAMENTO
-for(contador = 1; contador <= valorFinal; contador++){
-const valorCres = valorInicial + (valorInicial *(0.5/100));
+for(meses = 0; valorInicial <= valorFinal; meses++){
+valorInicial = valorInicial * 1.005;
 }
 
     //SAÍDA
-document.write(`Vai demorar ${contador} meses para dobrar o valor de ${valorInicial} para ${valorFinal}`)
-
+document.write(`Vai demorar ${meses} meses para dobrar o valor de ${(valorFinal/2).toFixed(2)} para ${valorFinal}`)
 </script>
